@@ -35,6 +35,9 @@ def test_signup_and_duplicate():
     activity = "Chess Club"
     email = "tester@mergington.edu"
 
+
+
+
     # signup
     res = client.post(f"/activities/{_quote(activity)}/signup", params={"email": email})
     assert res.status_code == 200
